@@ -4,13 +4,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>ABBY VR SCENE</title>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
 </head>
 
+
 <body>
-  Hello world
-  <script src="script.js"></script>
+  <a-scene>
+    <a-entity environment="preset: forest; dressingAmount:50;skyColor:purple"></a-entity>
+    <!-- start of whare/ house/ musuem-->
+    <a-box id="floor" position="0 0 0" scale="10.5 10.5" color="#F651B6" rotation="90 0 0"></a-box>
+    <a-box id="wall1_TahaHinengaro" position="0  1.473  4.907" rotation="0  0  0" scale="10  3  0.2"
+      src=images/wallpaper.jpg></a-box>
+    <a-box id="wall2_TahaTinana" position="0  1.473 -4.907" rotation="0  0  0" scale="10  3  0.2"
+      color="#F45B69"></a-box>
+    <a-box id="wall3_TahaWhānau" position="5.049  1.454  -0.008" rotation="0  -90  0" scale="10  3  0.2"
+      color="#F45B69"></a-box>
+    <a-box id="wall4_TahaWairua" position="-5.049  1.454  -0.008" rotation="0  -90  0" scale="10  3  0.2"
+      color="#F45B69"></a-box>
+    <a-cylinder id="triangle_front" segments-radial="3" position="0  3.874 4.907" rotation="-90  0  0"
+      scale="5.774  0.2  1.8" color="pink"></a-cylinder>
+    <a-cylinder id="triangle_back" segments-radial="3" position="0  3.874 -4.907" rotation="-90  0 0"
+      scale="5.774  0.2  1.8" color="pink"></a-cylinder> <!--end of house-->
+    <!-- art strt -->
+    <!-- frame -->
+    <a-box id="frame1" position="3.616 1.819 -4.739" rotation="0 0 0" scale="3 3 0.2" src="images/woodFrame1.jpg">
+    <a-plane id="art1" src="images/landscape.jpg" scale="0.5  0.5  0.5" rotation="0 0 0"
+      position="0.002  0.002  0.519"></a-plane>
+      </a-box>
+    <a-plane id="art2" src="images/flower.png" scale="2 2 0.05" rotation="0 0 0"
+      position="1.370 1.755 -4.696"></a-plane>
+    <a-plane id="art3" src="images/paint.jpg" scale="2 2 0.05" rotation="0 0 0"
+      position="-0.931 1.805 -4.787"></a-plane>
+    <a-plane id="art4" src="images/family.jpg" scale="2 2 0.05" rotation="0 0 0"
+      position="-3.041 1.799 -4.787">
+      </a-plane>
+<!-- 3d object-->
+    <a-obj-model id="3dModel1" src="images/tinker.obj" mtl="images/obj.mtl" position="0 0 0" rotation="-90 0 0" scale=".05 .05 .05"></a-obj-model>
+  </a-scene>
 </body>
 
 </html>
